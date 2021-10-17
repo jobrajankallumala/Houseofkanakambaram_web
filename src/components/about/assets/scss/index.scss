@@ -1,0 +1,24 @@
+#page-about {
+    .video {
+        height: 25rem;
+        @include media-breakpoint-down(sm) {
+            height: 18rem;
+        }
+        @include media-breakpoint-down(xs) {
+            height: 15rem;
+        }
+        .play {
+            @extend .both-center;
+            height: 5rem;
+            width: 5rem;
+            line-height: 4.5rem;
+            font-size: 2.5rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            border-radius:50%;
+            svg {
+                @extend .clr-tlt;
+            }
+        }
+    }
+}

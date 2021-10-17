@@ -1,0 +1,32 @@
+// @mixin theme($name) {
+//     // .#{$name} {
+//     //     // .bg-tlt {
+//     //     //     background-color: orange;
+//     //     // }
+//     // }
+// }
+
+@mixin fontLeveling($size, $letterSpacing, $lineHight) {
+    font-size: $size;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHight;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        color: #92929D;
+        @content;
+    }
+    &:-moz-placeholder {
+        color: #92929D;
+        @content;
+    }
+    &::-moz-placeholder {
+        color: #92929D;
+        @content;
+    }
+    &:-ms-input-placeholder {
+        color: #92929D;
+        @content;
+    }
+}

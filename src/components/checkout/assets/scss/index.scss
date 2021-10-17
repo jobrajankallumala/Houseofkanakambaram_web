@@ -1,0 +1,91 @@
+#page-checkout {
+    .btn-pay {
+        @extend .bg-tdk;
+        @extend .clr-tlt;
+        @extend .f-sm;
+        border-radius: 0;
+        // width: 100%;
+        margin-top: 1rem;
+        padding: 0.8rem 3rem;
+        height: 3rem;
+    }
+    .accordion {
+        .title {
+            border: 0;
+            @extend .h4;
+            background: none;
+            @extend .clr-tk;
+        }
+        .title.active {
+            @extend .clr-tdk;
+        }
+    }
+    .cart {
+        .img-box {
+            width: 4rem;
+            height: 4rem;
+            .img-ch {
+                width: 100% !important;
+            }
+        }
+        .quantity {
+            display: flex;
+            .box-c {
+                display: flex;
+                border: 1px solid #ccc;
+                .box {
+                    height: 2rem;
+                    width: 2rem;
+                    position: relative;
+                    svg,
+                    span {
+                        @extend .both-center;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .address-form {
+        .submit {
+            @extend .bg-tdk;
+            @extend .clr-tlt;
+            @extend .f-sm;
+            border-radius: 0;
+            // width: 100%;
+            margin-top: 1rem;
+            padding: 0.8rem 3rem;
+            height: 3rem;
+        }
+    }
+}
+// .login-form {
+//     .submit {
+//         @extend .bg-tdk;
+//         @extend .clr-tlt;
+//         @extend .f-sm;
+//         border-radius: 0;
+//         // width: 100%;
+//         margin-top: 1rem;
+//         padding: 0.8rem 3rem;
+//     }
+// }
+.login-form {
+    .submit {
+        @extend .bg-tdk;
+        @extend .clr-tlt;
+        @extend .f-sm;
+        border-radius: 0;
+        // width: 100%;
+        margin-top: 1rem;
+        padding: 0.8rem 3rem;
+        height: 3rem;
+    }
+    .form-otp {
+        input {
+            width: 3rem !important;
+            border: 1px solid;
+            @extend .border-tk;
+        }
+    }
+}

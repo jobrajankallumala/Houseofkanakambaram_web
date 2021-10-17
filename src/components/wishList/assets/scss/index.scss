@@ -1,0 +1,31 @@
+#page-wish-list {
+    .items {
+        .item-box {
+            // height: 18rem;
+            display: block;
+            .t-offer {
+                position: absolute;
+                top: 0;
+                right: 1.5rem;
+                @extend .bg-ta;
+                text-align: center;
+                border-radius: 0 0 30px 30px;
+                padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+                @extend .f-sm;
+            }
+        }
+        .buttons {
+            button {
+                border-radius: 0;
+                @extend .border-tk;
+                @extend .f-md-bold-sm;
+                margin-bottom: 0.7rem;
+                
+            }
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0;
+                display: flex;
+            }
+        }
+    }
+}

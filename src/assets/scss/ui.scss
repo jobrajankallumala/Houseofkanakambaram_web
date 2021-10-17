@@ -1,0 +1,42 @@
+.tm-btn-default {
+    // border-radius: 50%;
+}
+.tm-btn-circle {
+    border-radius: 50%;
+}
+.tm-btn-rectangle {
+    border-radius: 0.25rem;
+    border:1px solid #ccc;
+    @extend .bg-tlt;
+    height: 2.5rem;
+    padding: 6px 12px;
+}
+.tm-btn-circle.tm-btn-sm {
+    height: 2rem;
+    width: 2rem;
+    border:1px solid #ccc;
+    @extend .bg-tlt;
+}
+
+.table-tm-btn-circle {
+    border-radius: 50%;
+}
+.table-tm-btn-rectangle {
+    border-radius: 0.25rem;
+    border:1px solid #ccc;
+    @extend .bg-tlt;
+    height: 2.5rem;
+    padding: 6px 12px;
+}
+.table-tm-btn-circle.tm-btn-sm {
+    height: 2rem;
+    width: 2rem;
+    border:1px solid #ccc;
+    @extend .bg-tlt;
+}
+.table-tm-btn.delete {
+    @extend .clr-tb;
+}
+.table-tm-btn.edit {
+    @extend .clr-ta;
+}

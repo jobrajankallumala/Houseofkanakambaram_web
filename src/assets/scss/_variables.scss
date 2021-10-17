@@ -1,0 +1,36 @@
+$white: #ffffff;
+$skyblue: #f5fdff;
+$blue: #0a9ac6;
+$black: #000;
+$yellow: #fa9b27;
+$gray: #ebeef1;
+$green: #1aa36c;
+$pink: #bf025c;
+$purple: #553681;
+$purple-2: #a53d8a;
+$btnfont: ".8rem";
+$red: #ed1b25;
+$bg-dk-blue: #20227d;
+
+
+
+// $themes: (theme-ltght, theme-dark);
+
+// @each $theme in $themes {
+//     @include theme($theme);
+// }
+
+.body {
+}
+
+$header-height : 4.75rem;
+$menu-aside-width : 280px;
+$menu-aside-master-width : 85px;
+$menu-aside-child-width : 195px;
+
+@media (min-width: 1260px) {
+}
+@media (min-width: 1600px) {
+}
+@media (max-width: 993px) {
+}

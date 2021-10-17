@@ -1,0 +1,16 @@
+export const ADD_ARTICLE = "ADD_ARTICLE";
+export const ADD_CATEGORIES = "ADD_CATEGORIES";
+export const ADD_ALL_AETTINGS = "ADD_ALL_AETTINGS";
+export const SIGN_UP_SHOW = "SIGN_UP_SHOW";
+export const SIGN_IN_SHOW = "SIGN_IN_SHOW";
+export const SEARCH_FILTER_SHOW = "SEARCH_FILTER_SHOW";
+export const TODO_SHOW = "TODO_SHOW";
+export const THEME_TOGGLE = "THEME_TOGGLE";
+export const ACCESS_TOKEN = "ACCESS_TOKEN";
+export const USER = "USER";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const TEST = "TEST";
+export const ADD_TO_WISH_LIST = "ADD_TO_WISH_LIST"
+export const CART_SUMMARY = "CART_SUMMARY"
+export const SET_CATEGORY_ID = "SET_CATEGORY_ID"
+export const SET_ACTIVE_CURRENCY = "SET_ACTIVE_CURRENCY"

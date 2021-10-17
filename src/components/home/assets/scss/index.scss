@@ -1,0 +1,186 @@
+.banner {
+    .item-01 {
+        .pre-item-box {
+            position: relative;
+            height: 33rem;
+            display: block;
+            .img-ch {
+                height: 100%;
+            }
+            .t-sn {
+                // display: none;
+                @extend .f-lg-bold-sm;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+                height: 7rem;
+                width: 7rem;
+                padding: 0.5rem;
+                line-height: 6rem;
+                text-align: center;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .t-ht {
+                @extend .h5;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+
+                padding: 1rem 2rem 1rem;
+                @extend .clr-tdk;
+                text-align: center;
+
+                bottom: 1rem;
+                left: 0;
+            }
+        }
+    }
+    .item-02 {
+        .pre-item-box {
+            position: relative;
+            height: 16rem;
+            display: block;
+            .img-ch {
+                height: 100%;
+            }
+
+            .t-ht {
+                @extend .h5;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+
+                padding: 1rem 2rem 1rem;
+                @extend .clr-tdk;
+                text-align: center;
+
+                top: 2rem;
+                right: 0;
+            }
+        }
+    }
+    .item-03 {
+        margin-top: 1rem;
+        .pre-item-box {
+            position: relative;
+            height: 16rem;
+            display: block;
+            .img-ch {
+                height: 100%;
+            }
+            .t-ht {
+                @extend .h5;
+                position: absolute;
+                padding: 0.5rem 1rem;
+                @extend .clr-tdk;
+                text-align: center;
+                border: 2px solid #fff;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+.product-items {
+    .item-box {
+        // height: 14rem;
+        // @include media-breakpoint-up(lg) {
+        //     height: 16rem;
+        // }
+        display: block;
+        transition: all 0.5s;
+        .t-sn {
+            display: none;
+            @extend .f-sm-bold-sm;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            height: 5.5rem;
+            width: 5.5rem;
+            padding: 0.5rem;
+            line-height: 4.5rem;
+            text-align: center;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            transition: all 0.5s;
+            .t-sn {
+                display: block;
+            }
+        }
+        
+    }
+}
+.categories-section {
+    .box-primary {
+        height: 10rem;
+    }
+    .bg {
+        background: linear-gradient(to left, #fff 50%, #262625 50%);
+    }
+    .categories {
+        margin-bottom: 0;
+        li {
+            width: 100%;
+            margin-bottom: 2rem;
+            @extend .clr-tlt;
+            a {
+                &:hover {
+                    @extend .clr-ta;
+                }
+            }
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .rt {
+        // height: 100%;
+        .img-parent.img-01 {
+            height: 35%;
+            margin-bottom: 8%;
+        }
+        .img-parent.img-02 {
+            height: 62%;
+        }
+        .img-parent.img-03 {
+            height: 100%;
+        }
+    }
+}
+.reviews {
+    .nav-item.active {
+        .img-box {
+            border: 7px solid;
+            @extend .border-ta;
+        }
+    }
+    .img-box {
+        height: 5rem;
+        width: 5rem;
+    }
+    .nav-link {
+        padding: 0.5rem;
+        a {
+        }
+        img {
+            width: 5rem;
+        }
+    }
+    .stars {
+        display: flex;
+        svg {
+            margin-right: 0.1rem;
+            @extend .clr-ta;
+            @extend .h5;
+        }
+    }
+    // .img-parent {
+    //     height: 3rem;
+    //     width: 3rem;
+    // }
+}

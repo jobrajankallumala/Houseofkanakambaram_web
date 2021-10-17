@@ -1,0 +1,34 @@
+@import "variables.scss";
+@import "color-themes";
+@import "./mixins.scss";
+
+body.light {
+    @include theme($name:light);
+}
+body.dark {
+    @include theme($name:dark);
+}
+@import "~bootstrap/scss/bootstrap";
+
+@import "./fonts.scss";
+@import "./utils.scss";
+@import "./basics.scss";
+// @import "./ui.scss";
+@import "./table.scss";
+@import "../../components/layout/welcome/assets/scss/index";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+@import "../../components/home/assets/scss/index.scss";
+@import "../../components/about/assets/scss/index.scss";
+@import "../../components/products/assets/scss/index.scss";
+@import "../../components/wishList/assets/scss/index.scss";
+@import "../../components/productLanding/assets/scss/index.scss";
+@import "../../components/cart/assets/scss/index.scss";
+@import "../../components/checkout/assets/scss/index.scss";
+@import "../../components/contact/assets/scss/index.scss";
+@import "../../components/tm/assets/scss/index.scss";
+@import "../../components/protected/user/assets/scss/index.scss";
+@import "../../components/protected/order/assets/scss/index.scss";
+@import "../../components/payment/assets/scss/index.scss";
+@import "../../components/auth/assets/scss/index.scss";
+

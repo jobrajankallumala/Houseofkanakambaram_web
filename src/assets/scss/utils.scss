@@ -1,0 +1,261 @@
+.btn-0 {
+    background: inherit !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.btn-effect-0 {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    float: none !important;
+    right: 0 !important;
+}
+
+.no-pointer {
+    pointer-events: none;
+}
+
+.p-relative {
+    position: relative;
+    .disabled-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(125, 125, 125, 0.1);
+        z-index: 1;
+    }
+}
+.p-absolute {
+    position: absolute;
+}
+.d-grid {
+    display: grid;
+}
+.cp {
+    cursor: pointer;
+}
+
+/*
+ Text
+ -------------------------------------------------------
+*/
+.text-cap {
+    text-transform: capitalize;
+}
+.text-up {
+    text-transform: uppercase;
+}
+.text-low {
+    text-transform: lowercase;
+}
+
+/*
+ Button
+ -------------------------------------------------------
+*/
+.btn-default {
+    border: 1px solid;
+    @extend .border-tk;
+    @extend .bg-tlt;
+    @extend .clr-tdk;
+    @extend .f-md;
+    padding: 0.5rem 2rem;
+    border-radius: 0;
+    svg {
+        margin-left: 1rem;
+        @extend .clr-ta;
+        @extend .f-lg;
+    }
+}
+
+.pagination {
+    .box {
+        width: 2.875rem;
+        height: 2.875rem;
+        @extend .bg-tj;
+        @extend .h4;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.5s;
+        span,
+        svg {
+            @extend .both-center;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 2rem;
+            height: 2rem;
+            font-size: 1rem;
+        }
+        &:hover {
+            @extend .bg-ta;
+        }
+    }
+    .box.active {
+        @extend .bg-ta;
+    }
+}
+
+/*
+form
+*/
+.tm-form {
+    input,
+    textArea,
+    .css-g1d714-ValueContainer,
+    .css-1hwfws3,
+    .ReactFlagsSelect-module_flagsSelect__2pfa2 {
+        height: 3rem !important;
+        border-radius: 0.125rem !important;
+    }
+    .react-tel-input {
+        input {
+            width: 100%;
+        }
+    }
+    .ReactFlagsSelect-module_flagsSelect__2pfa2 {
+        padding: 0;
+        button {
+            border: 0;
+        }
+    }
+    .react-datepicker-wrapper {
+        width: 100%;
+        input {
+            width: 100%;
+            border: 1px solid #ced4da;
+            padding: 0.375rem 0.75rem;
+        }
+    }
+    input[type="file"] {
+        display: none;
+    }
+    // .custom-file-upload {
+    //     border: 1px solid #ccc;
+    //     display: flex;
+    //     padding: 6px 12px;
+    //     cursor: pointer;
+    //     width: 100%;
+    //     background: rgba(196, 196, 196, 0.1);
+    //     height: 3.75rem;
+    //     text-align: center;
+    //     div {
+    //         @extend .clr-tb;
+    //         width: 100%;
+    //         svg {
+    //             font-size: 1.5rem;
+    //             margin-top: -3px;
+    //         }
+    //     }
+    // }
+    .img-box {
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 0.4rem;
+        border: 1px solid #d7dfe9;
+        @extend .col-auto;
+        margin-right: 1rem;
+        padding: 0;
+        svg {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #fff;
+            box-shadow: 0px 6px 8px rgba(53, 59, 80, 0.14);
+            border-radius: 50%;
+            color: red;
+            padding: 1px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        img {
+            max-height: 100%;
+            display: block;
+            @extend .mx-auto;
+        }
+    }
+    .validation-error {
+        color: red;
+        @extend .f-sm;
+    }
+}
+
+/*
+ image
+ -------------------------------------------------------
+*/
+.img-parent {
+    overflow: hidden;
+    /* anyhow you have given fixed height in other divs */
+    position: relative;
+
+    .img-ch {
+        position: absolute;
+        height: auto;
+        // width: 100%;
+        left: -100%;
+        right: -100%;
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+    }
+}
+.item-box.img-parent {
+    .img-ch {
+        width: 100%;
+    }
+}
+
+/*
+Star Rating
+-------------------------------------------------------
+*/
+.rating {
+    .star {
+        color: gray;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+/*
+ Spacing
+ -------------------------------------------------------
+*/
+.mt-c2 {
+    margin-top: 2rem;
+}
+.my-c2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.h2-space {
+    margin-bottom: 2.2rem;
+}
+.section-spacing {
+    padding-top: 3rem;
+    margin-top: 3rem;
+    @include media-breakpoint-down(sm) {
+        padding-top: 1rem;
+    }
+}
+.section-spacing-inner {
+    padding-top: 3rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    @include media-breakpoint-down(sm) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+.section-spacing-fill {
+    margin-top: 6rem;
+    @include media-breakpoint-down(sm) {
+        margin-top: 4rem;
+    }
+}

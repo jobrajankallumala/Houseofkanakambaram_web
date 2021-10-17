@@ -1,0 +1,333 @@
+@font-face {
+    font-family: OpenSansBold;
+    src: url("/fonts/open-sans/OpenSans-Bold_0.ttf");
+}
+@font-face {
+    font-family: OpenSansSemiBold;
+    src: url("/fonts/open-sans/OpenSans-Semibold_0.ttf");
+}
+@font-face {
+    font-family: OpenSansRegular;
+    src: url("/fonts/open-sans/OpenSans-Regular_0.ttf");
+}
+@font-face {
+    font-family: OpenSansExtraBold;
+    src: url("/fonts/open-sans/OpenSans-ExtraBold_0.ttf");
+}
+
+
+@font-face {
+    font-family: PDBold;
+    src: url("/fonts/playfair-display/PlayfairDisplay-Bold");
+}
+@font-face {
+    font-family: PDBlack;
+    src: url("/fonts/playfair-display/PlayfairDisplay-Black.otf");
+}
+@font-face {
+    font-family: PDRegular;
+    src: url("/fonts/playfair-display/PlayfairDisplay-Regular.otf");
+}
+
+.font-pd-regular {
+    font-family: "PDRegular", sans-serif;
+    font-weight: 400;
+}
+.font-pd-bold {
+    font-family: "PDBold", sans-serif;
+    font-weight: 700;
+}
+.font-pd-black {
+    font-family: "PDBold", sans-serif;
+    font-weight: 700;
+}
+
+.font-bold {
+    font-family: "OpenSansBold", sans-serif;
+    font-weight: 700;
+}
+.font-semi-bold {
+    font-family: "OpenSansSemiBold", sans-serif;
+    font-weight: 600;
+}
+.font-regular {
+    font-family: "OpenSansRegular", sans-serif;
+    font-weight: 400;
+}
+.font-extra-bold {
+    font-family: "OpenSansExtraBold", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    @extend .font-regular;
+}
+
+.h1 {
+    @extend .font-pd-regular;
+    @include fontLeveling(3.75rem, 0, 134.2%);
+    @include media-breakpoint-down(sm) {
+        @include fontLeveling(1.75rem, 0, 134.2%);
+    }
+}
+.h1-bold {
+    @extend .font-pd-bold;
+    @include fontLeveling(3.75rem, 0, 134.2%);
+    @include media-breakpoint-down(sm) {
+        @include fontLeveling(1.75rem, 0, 134.2%);
+    }
+}
+.h1-black {
+    @extend .font-pd-black;
+    @include fontLeveling(3.75rem, 0, 134.2%);
+    @include media-breakpoint-down(sm) {
+        @include fontLeveling(1.75rem, 0, 134.2%);
+    }
+}
+.h2 {
+    @extend .font-pd-regular;
+    @include fontLeveling(2rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        @include fontLeveling(1.5rem, 0, "");
+    }
+}
+.h2-bold {
+    @extend .font-pd-bold;
+    @include fontLeveling(2rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        @include fontLeveling(1.5rem, 0, "");
+    }
+}
+.h2-black {
+    @extend .font-pd-black;
+    @include fontLeveling(2rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        @include fontLeveling(1.5rem, 0, "");
+    }
+}
+.h3 {
+    @extend .font-pd-regular;
+    @include fontLeveling(1.5rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1.25rem, 0, "");
+    }
+}
+.h3-bold {
+    @extend .font-pd-bold;
+    @include fontLeveling(1.5rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1.25rem, 0, "");
+    }
+}
+.h3-black {
+    @extend .font-pd-black;
+    @include fontLeveling(1.5rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1.25rem, 0, "");
+    }
+}
+.h4 {
+    @extend .font-pd-regular;
+    @include fontLeveling(1.25rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1.125rem, 0, "");
+        // font-family: "GilroyRegular", sans-serif;
+    }
+}
+.h4-bold {
+    @extend .font-pd-bold;
+    @include fontLeveling(1.25rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1.125rem, 0, "");
+        // font-family: "GilroyRegular", sans-serif;
+    }
+}
+.h4-black {
+    @extend .font-pd-black;
+    @include fontLeveling(1.25rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1.125rem, 0, "");
+        // font-family: "GilroyRegular", sans-serif;
+    }
+}
+.h5 {
+    @extend .font-pd-regular;
+    @include fontLeveling(1.375rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1rem, 0, "");
+    }
+}
+.h5-bold {
+    @extend .font-pd-bold;
+    @include fontLeveling(1.375rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1rem, 0, "");
+    }
+}
+.h5-black {
+    @extend .font-pd-black;
+    @include fontLeveling(1.375rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1rem, 0, "");
+    }
+}
+.h6 {
+    @extend .font-pd-regular;
+    @include fontLeveling(1.1rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1rem, 0, "");
+    }
+}
+.h6-bold {
+    @extend .font-pd-bold;
+    @include fontLeveling(1.1rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1rem, 0, "");
+    }
+}
+.h6-black {
+    @extend .font-pd-black;
+    @include fontLeveling(1.1rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(1rem, 0, "");
+    }
+}
+
+
+/** p1*/
+.f-xl {
+    @extend .font-regular;
+    @include fontLeveling(1.125rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+        // font-family: "GilroyRegular", sans-serif;
+    }
+}
+.f-xl-med {
+    @extend .font-regular;
+    @include fontLeveling(1.125rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+        // font-family: "GilroyRegular", sans-serif;
+    }
+}
+.f-xl-bold-sm {
+    @extend .font-semi-bold;
+    @include fontLeveling(1.125rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+/** p1*/
+.f-lg {
+    @extend .font-regular;
+    @include fontLeveling(1rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+.f-lg-bold {
+    @extend .font-bold;
+    @include fontLeveling(1rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+.f-lg-bold-sm {
+    @extend .font-semi-bold;
+    @include fontLeveling(1rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+/** p2*/
+.f-md {
+    @extend .font-regular;
+    @include fontLeveling(0.875rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+.f-md-cap {
+    @extend .font-regular;
+    @include fontLeveling(0.875rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+.f-md-bold-sm {
+    @extend .font-semi-bold;
+    @include fontLeveling(0.875rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+.f-md-bold {
+    @extend .font-bold;
+    @include fontLeveling(0.875rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+/** p3*/
+.f-sm {
+    @extend .font-regular;
+    @include fontLeveling(0.75rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+.f-sm-bold {
+    @extend .font-bold;
+    @include fontLeveling(0.75rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+.f-sm-bold-sm {
+    @extend .font-semi-bold;
+    @include fontLeveling(0.75rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+/** p4*/
+.f-xs {
+    @extend .font-regular;
+    @include fontLeveling(0.625rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+.f-xs-bold-sm {
+    @extend .font-semi-bold;
+    @include fontLeveling(0.625rem, 0, "");
+    @include media-breakpoint-down(sm) {
+        // @include fontLeveling(0.625rem, 0, "");
+    }
+}
+
+.button-text {
+    @extend .font-regular;
+    @include fontLeveling(1rem, 0, "");
+}
+.button-text-cap {
+    @extend .font-semi-bold;
+    @include fontLeveling(0.875rem, 0.25, "");
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sm-bold {
+    @extend .font-semi-bold;
+}
+

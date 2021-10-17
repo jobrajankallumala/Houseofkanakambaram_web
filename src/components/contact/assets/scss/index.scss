@@ -1,0 +1,14 @@
+#page-contact {
+    .contact-form {
+        .submit {
+            @extend .bg-tdk;
+            @extend .clr-tlt;
+            @extend .f-sm;
+            border-radius: 0;
+            // width: 100%;
+            margin-top: 1rem;
+            padding: 0.8rem 3rem;
+        }
+    }
+    
+}

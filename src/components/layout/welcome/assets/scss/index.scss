@@ -1,0 +1,143 @@
+header {
+    select.currency {
+        background:none;
+        border:0;
+        @extend .font-pd-regular;
+        &:focus-visible {
+            outline:0 !important;
+        }
+    }
+    .center {
+        .logo {
+            img {
+                width: 11.125rem;
+                @include media-breakpoint-up(sm) {
+                    width: 13.125rem;
+                }
+                @include media-breakpoint-up(md) {
+                    width: 15.125rem;
+                }
+                @media (max-width: 400px) {
+                    width: 9.125rem;
+                }
+            }
+        }
+        .line {
+            border-top: 2px solid;
+            @extend .border-tk;
+        }
+        .menu-ico-c {
+           
+            @include media-breakpoint-down(xs) {
+                max-width: 3.2rem !important;
+            }
+            
+        }
+        .menu {
+            a {
+                margin-left: 0.6rem;
+                font-size: 1rem;
+                @media (max-width:350px) {
+                    font-size: 1rem !important;
+                }
+                @media (max-width:400px) {
+                    font-size: 1rem;
+                }
+                @include media-breakpoint-up(sm) {
+                    margin-left: 0.8rem;
+                    font-size: 1rem;
+                }
+                @include media-breakpoint-up(md) {
+                    margin-left: 1.5rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .bottom {
+        .navbar {
+            .navbar-toggler {
+                position: absolute;
+                top: -56px;
+                left: -3px;
+                border: 0;
+                padding: 0;
+                @media (max-width: 400px) {
+                    top: -49px !important;
+                }
+                @media (max-width: 576px) {
+                    top: -52px;
+                }
+                
+            }
+            // padding: 0.5rem 1rem;
+            .navbar-nav {
+                .nav-link {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    @extend .f-md-bold-sm;
+                    @extend .clr-tdk;
+                }
+                .active.active {
+                    @extend .clr-ta;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    .border-rt {
+        height: 100%;
+        @extend .border-tn;
+        @include media-breakpoint-up(sm) {
+            border-right: 1px solid;
+            
+        }
+    }
+    .about {
+        p {
+            line-height: 2;
+        }
+    }
+    .menu {
+        ul {
+            padding: 0;
+            li {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .subscription {
+        .form-group {
+            position: relative;
+            input {
+                border-radius: 0;
+                height: 2.8rem;
+            }
+            button {
+                position: absolute;
+                height: 100%;
+                right: 0;
+                top: 0;
+                background: none;
+                border: 0;
+                @extend .clr-ta;
+            }
+        }
+        img {
+            margin-right: 0.5rem;
+            height: 2rem;
+        }
+    }
+    .social-icons {
+        justify-content: center;
+        a {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            svg {
+                @extend .h5;
+            }
+        }
+    }
+}

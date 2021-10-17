@@ -1,0 +1,28 @@
+.card-tm-table {
+    border-radius: inherit !important;
+    .card-header {
+        border-bottom: 0;
+        border-radius: inherit !important;
+        .h4 {
+            margin-bottom: 0;
+        }
+        .select {
+            width: 10rem;
+        }
+    }
+    table {
+        tr {
+            td {
+                .img-sm {
+                    width: 2rem;
+                }
+                .img-md {
+                    width: 3rem;
+                }
+                .img-lg {
+                    width: 4rem;
+                }
+            }
+        }
+    }
+}

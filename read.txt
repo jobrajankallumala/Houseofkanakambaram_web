@@ -1,0 +1,19 @@
+npx create-react-app oursexpress
+yarn add express
+npm add @babel/preset-env @babel/preset-react @babel/register ignore-styles
+npm ssr
+
+
+
+https://www.youtube.com/watch?v=NwyQONeqRXA
+https://www.pveller.com/my-go-to-react-api-scaffold/
+https://dev.to/numtostr/running-react-and-node-js-in-one-shot-with-concurrently-2oac
+https://dillionmegida.com/p/how-to-configure-meta-tags-in-react-app-dynamically/#how-to-use
+https://create-react-app.dev/docs/deployment/
+
+
+electron
+
+http://people.loyno.edu/~rharvey/teaching/cosc-a319/2019f/converting-cra-to-electron/
+https://medium.com/@kitze/%EF%B8%8F-from-react-to-an-electron-app-ready-for-production-a0468ecb1da3
+

@@ -1,0 +1,87 @@
+#page-my-account {
+    .table {
+        @extend .f-md;
+        text-align: left;
+        thead {
+            border-bottom: 1px solid #ccc !important;
+        }
+        th,
+        td {
+            border: 0;
+            vertical-align: middle;
+        }
+        .img-box {
+            width: 4rem;
+            height: 4rem;
+            .img-ch {
+                width: 100% !important;
+            }
+        }
+    }
+    .address {
+        button {
+            @extend .bg-tdk;
+            @extend .clr-tlt;
+            @extend .f-sm;
+            border-radius: 0;
+            width: 100%;
+            margin-top: 1rem;
+            padding: 0.8rem;
+        }
+    }
+    .table-container {
+        @include media-breakpoint-down(md) {
+            overflow-x: scroll;
+        }
+        .table {
+            @extend .f-md;
+            text-align: left;
+            thead {
+                border-bottom: 1px solid #ccc !important;
+            }
+            th,
+            td {
+                border: 0;
+                vertical-align: middle;
+            }
+            .img-box {
+                width: 4rem;
+                height: 4rem;
+                @include media-breakpoint-down(xs) {
+                    width: 5.5rem;
+                }
+                .img-ch {
+                    width: 100% !important;
+                }
+            }
+            
+        }
+    }
+}
+.address-modal {
+    .modal-header {
+        border-bottom: 0;
+        // button {
+        //     background: red;
+        //     border-radius: 50%;
+        //     width: 1rem;
+        //     position: relative;
+        //     height: 1rem;
+        //     span {
+        //         @extend .both-center;
+        //         font-size: 1rem;
+        //     }
+        // }
+    }
+    .address-form {
+        .submit {
+            @extend .bg-tdk;
+            @extend .clr-tlt;
+            @extend .f-sm;
+            border-radius: 0;
+            width: 100%;
+            // margin-top: 1rem;
+            padding: 0.8rem 3rem;
+        }
+    }
+}

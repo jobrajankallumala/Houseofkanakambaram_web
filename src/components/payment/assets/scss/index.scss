@@ -1,0 +1,10 @@
+#page-payment-response {
+    button {
+        border: 0;
+        margin-top: 1rem;
+        @extend .bg-tdk;
+        border-radius: 0;
+        height: 3rem;
+        
+    }
+}
